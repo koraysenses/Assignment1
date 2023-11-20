@@ -26,6 +26,19 @@ public:
 
     UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
     UTexture2D* Image;    
+
+    UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+    float Speed;
+
+    UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+    float Health;
+
+    UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+    float MeshScale;
+
+    UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
+    FLinearColor Color;
+
 };
 
 /**
@@ -45,6 +58,6 @@ public:
     void SetPlayerAgentInfoFor(int PlayerControllerID, FSAgentInfo& info);
 
     UFUNCTION(BlueprintCallable, Category = "BirdOfPrey")
-    FSAgentInfo& GetPlayerAgentInfoFor(int PlayerControllerID, bool &Result);
+    FSAgentInfo& GetPlayerAgentInfoFor(int PlayerControllerID, bool& Result); 
 	
 };
