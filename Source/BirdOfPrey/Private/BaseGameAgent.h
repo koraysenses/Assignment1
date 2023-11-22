@@ -95,7 +95,7 @@ public:
 	virtual void TakeDamage(float Damage, float& ActualDamage);
 
 	UFUNCTION(BlueprintCallable, BlueprintPure, Category = "BirdOfPrey")
-	bool IsAlive();
+	void IsAlive(bool& Alive);
 
 	UFUNCTION(BlueprintCallable, Category = "BirdOfPrey")
 	void Died(AController* Killer);

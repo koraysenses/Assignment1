@@ -27,11 +27,10 @@ void ABaseGameAgent::TakeDamage(float Damage, float& ActualDamage)
 {
 }
 
-
-bool ABaseGameAgent::IsAlive()
+void ABaseGameAgent::IsAlive(bool& Alive)
 {
-	return false;
 }
+
 
 void ABaseGameAgent::Died(AController* Killer)
 {
