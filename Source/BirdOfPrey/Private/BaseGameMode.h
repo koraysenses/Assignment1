@@ -27,7 +27,7 @@ public:
 	FVector2D MaxRelativePlayerOffset;
 
 	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
-	AWorldCameraActor* WorldCameraAactor;
+	AWorldCameraActor* WorldCameraaActor;
 	
 	UPROPERTY(BlueprintReadWrite, Category = "BirdOfPrey")
 	UDataTable* PlayerAgentInfoTable;
